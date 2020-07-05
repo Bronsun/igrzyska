@@ -3,10 +3,10 @@
     margin: 0;
 }
 body{
-    background-color: #2f2f2f;
+    background-color: #181818;
     text-align: center;
     object-position: center;
-    font-family: Arial;
+    font-family: Calibri;
 }
 *:focus {
     outline: none;
@@ -54,7 +54,7 @@ a{
 }
 .btn {    
     border: 1px solid #dfdddd;
-    background: #00445e;
+    background: #006c8c;
     color: #dfdddd;
     font-size: 2vh;
     text-shadow: none;
@@ -79,7 +79,7 @@ a{
 }    
 .btn1{
     border: 1px solid #dfdddd;
-    background: #00445e;
+    background: #006c8c;
     color:#dfdddd;
     font-size: 2.2vh;
     text-shadow: none;
@@ -90,76 +90,71 @@ a{
     height: 7vh;
     margin: 5vh auto;
 }
-    h2{
-        color: white;
-        text-align: center;
-        padding: 1vh;
-        margin: 3vh auto;
-    }
+h2{
+    color: #dfdddd;
+    text-align: center;
+    padding: 1vh;
+    margin: 3vh auto;
+}
 
 .contentUsers{
-        max-width: 70%;
-        max-height: 30vh;
-        padding: 1vw;
-        margin: 4vh auto;
-        background-color: #dfdddd;
-        border-radius: 10px;
-        overflow-y:scroll;
+    max-width: 70%;
+    max-height: 30vh;
+    padding: 1vw;
+    margin: 4vh auto;
+    background-color: #dfdddd;
+    border-radius: 10px;
+    overflow-y:scroll;
 }
 .Userbox{
-        width:100%;
-        font-size: 2vh;
-        font-weight: 400;
-        text-align: left;
-        padding: 10px;
-        overflow-y:scroll;
-        overflow-wrap: break-word;
-        hyphens: auto;
+    width:100%;
+    font-size: 2vh;
+    font-weight: 400;
+    text-align: left;
+    padding: 10px;
+    overflow-y:scroll;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
-
-
-    .mess_sent{
-        color: rgb(160, 160, 160);
+.mess_sent{
+    color: rgb(160, 160, 160);
+    font-size: 2vh;
+}
+@media(max-width: 1024px)
+{
+    .content{
+       
+        margin: 2vh auto auto;
+        padding: 5vw;           
+    }
+    .form-control{
+        width: 90vw;
+        height: 20vh;
+    }
+    .btn {
+        font-size: 2.5vh;
+        width: 80vw;
+        height: 6vh;
+        margin: 5vh auto;
+    }
+    .btn1{
+        
         font-size: 1.8vh;
+        width: 30vw;
+        height: 14vh;
+        margin: 5vh auto;
     }
-    @media(max-width: 1024px)
-    {
-        .content{
-           
-            margin: 2vh auto auto;
-            padding: 5vw;           
-        }
-        .form-control{
-            width: 90vw;
-            height: 20vh;
-        }
-            .btn {
-                font-size: 2.5vh;
-                width: 80vw;
-                height: 6vh;
-                margin: 5vh auto;
-            }
-            .btn1{
-                
-                font-size: 1.8vh;
-                width: 30vw;
-                height: 14vh;
-                margin: 5vh auto;
-            }
-            .contentUsers{
-                max-width: 85%;
-                margin: 2vh auto;
-            }
-            .Userbox{
-                font-size: 2vh;
-                padding: 0.1vw 0.3vh;
-            }
-            .mess_sent{
-                font-size: 2vh;
-            }
-            p{
-                font-size:2vh;
-                max-width: 98%;
-            }
+    .contentUsers{
+        max-width: 85%;
+        margin: 2vh auto;
     }
+    .Userbox{
+        font-size: 2vh;
+        padding: 0.1vw 0.3vh;
+    }
+    p{
+        font-size:2vh;
+        max-width: 98%;
+    }
+}
     

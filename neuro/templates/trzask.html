@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-    <title>Trzaskowski</title>
+    <title>Trzaskowski_dodaj</title>
     
 </head>
 <body>
@@ -15,11 +15,10 @@
         <p>Staraj się zmieścić w maksymalnie 200 znakach.<br>Jeśli przekroczysz nic się nie stanie, ale dla komfortu innych użytkowników staraj się zwięźle przekazawać swoją wypowiedź.<br>Dziękujemy :)</p>
         {{ form.hidden_tag() }}
         {{ form.answer(class="form-control",placeholder="Twoja opinia") }}
-        {{form.submit(class="btn") }}
-        
         {%if message%}
         <p class="mess_sent">{{ message }}</p>
         {%endif%}
+        {{form.submit(class="btn") }}
         </form>
     <button class="btn"><a href="/duda">Wypowiedz się na temat Dudy</a></button>
     <button class="btn"><a href="/wynikiduda">Zobacz opinie o Dudzie</a></button>

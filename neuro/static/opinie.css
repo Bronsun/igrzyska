@@ -7,10 +7,10 @@
     }
 
 body{
-    background-color: #2f2f2f;
+    background-color: #181818;
     text-align: center;
     object-position: center;
-    font-family: Arial;
+    font-family: Calibri;
 }
 .content{
     max-width: 50%;
@@ -35,8 +35,9 @@ a{
 }
 .btn {    
     border: 1px solid #dfdddd;
-    background: #00445e;
+    background: #006c8c;
     font-size: 2vh;
+    font-weight: 500;
     text-shadow: none;
     border-radius: 5px;
     box-shadow: none;
