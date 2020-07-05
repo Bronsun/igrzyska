@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Duda</title>
+</head>
+<body>
+    <div class="content">
+    <form method="POST" action="/duda">
+        <h1>Wypowiedz się na temat Andrzeja Dudy</h1>
+        <p>Staraj się zmieści w maksymalnie 200 znakach.<br>Jeśli przekroczysz nic się nie stanie, ale dla komfortu innych użytkowników 
+            staraj się zwięźle przekazawać swoją wypowiedź.<br>Dziękujemy :)</p>
+        {{ form.hidden_tag() }}
+        {{ form.answer(class="form-control",placeholder="Twoja opinia") }}
+        {{form.submit(class="btn") }}
+        {%if message%}
+        <p class="mess_sent">{{ message}}</p>
+        {%endif%}
+        </form>
+    <button class="btn"><a href="/trzask">Wypowiedz się na temat Trzaskowskiego</a></button>
+    <button class="btn"><a href="/wynikiduda">Zobacz opinie o Dudzie</a></button>
+    <button class="btn"><a href="/wynikitrzask">Zobacz opinie o Trzaskowskim</a></button>
+</div>
+
+</body>

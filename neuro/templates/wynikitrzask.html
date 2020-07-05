@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Trzaskowski</title>
+</head>
+<body>
+    <h2>Opinie o Rafale Trzaskowskim</h2>
+    <div class="buttons">
+    <a href="/trzask"><button class="btn1">Wypowiedz się na temat Trzaskowskiego</button></a>
+    <a href="/duda"><button class="btn1">Wypowiedz się na temat Dudy</button></a>
+    <a href="/wynikiduda"><button class="btn1">Zobacz opinie o Dudzie</button></a>
+    </div>{% for answer in answers %}
+    <div class="contentUsers">
+        <div class="Userbox">
+                <dl>
+        <dt id="number">{{ answer.id }}.</dt> 
+        <dd id="answer">{{ answer.answer }}</dd> </dl> 
+        </div></div>
+
+            {%endfor%}
+
+
+</body>
