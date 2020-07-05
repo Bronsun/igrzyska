@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_sqlalchemy import SQLAlchemy, desc
+from flask_sqlalchemy import SQLAlchemy
 #from flask_login import LoginManager
 #from flask_admin import Admin,AdminIndexView
 #from flask_admin.contrib.sqla import ModelView

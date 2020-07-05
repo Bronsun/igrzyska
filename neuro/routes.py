@@ -33,10 +33,10 @@ def dodajDuda():
 
 @app.route('/wynikiduda',methods=['GET','POST'])
 def zobaczDuda():
-    answers = Duda.query.all()
+    answers = Duda.query.order_by(Duda.date_posted.desc())
     return render_template('wynikiduda.html',answers=answers)
 
 @app.route('/wynikitrzask',methods=['GET','POST'])
 def zobaczTrzask():
-    answers = Trzask.query.all()
+    answers = Trzask.query.order_by(Trzask.date_posted.desc())
     return render_template('wynikitrzask.html',answers=answers)
