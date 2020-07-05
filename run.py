@@ -1,4 +1,4 @@
-from neuro import app
+from igrzyska import app
 
 if __name__=='__main__':
     app.run(debug=True)

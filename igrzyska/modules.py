@@ -1,5 +1,5 @@
 from datetime import datetime
-from neuro import db
+from igrzyska import db
 
 
 class Duda(db.Model):

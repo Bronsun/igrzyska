@@ -1,7 +1,7 @@
 from flask import render_template, url_for, flash, redirect,request
-from neuro import app,db
-from neuro.forms import DudaForm,TrzaskForm
-from neuro.modules import Duda,Trzask
+from igrzyska import app,db
+from igrzyska.forms import DudaForm,TrzaskForm
+from igrzyska.modules import Duda,Trzask
 
 @app.route("/")
 @app.route('/opinie',methods=['GET','POST'])
