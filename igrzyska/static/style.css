@@ -111,10 +111,11 @@ h2{
     font-size: 2vh;
     font-weight: 400;
     text-align: left;
-    padding: 10px;
+    padding: 0.5vw;
     overflow-y:scroll;
     overflow-wrap: break-word;
     hyphens: auto;
+    overflow-x: hidden;
 }
 .mess_sent{
     color: rgb(160, 160, 160);
