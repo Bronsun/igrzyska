@@ -7,10 +7,10 @@
     }
 
 body{
-    background-color: #3b3b3b;
+    background-color: #2f2f2f;
     text-align: center;
     object-position: center;
-    font-family: Calibri;
+    font-family: 'Lato', sans-serif;
 }
 .content{
     max-width: 50%;
