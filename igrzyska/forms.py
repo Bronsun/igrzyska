@@ -4,9 +4,9 @@ from wtforms.validators import DataRequired,Length,Email,EqualTo, ValidationErro
 
 
 class DudaForm(FlaskForm):
-    answer = TextAreaField('Odpowiedz',validators=[DataRequired()])
+    answer = TextAreaField('Odpowiedz',validators=[DataRequired(), Length(min=1,max=2000)])
     submit = SubmitField('Wyślij odpowiedź')
 
 class TrzaskForm(FlaskForm):
-    answer = TextAreaField('Odpowiedz',validators=[DataRequired()])
+    answer = TextAreaField('Odpowiedz',validators=[DataRequired(),Length(min=1,max=2000)])
     submit = SubmitField('Wyślij odpowiedź')
